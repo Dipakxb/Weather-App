@@ -8,7 +8,7 @@ export default function WeatherApp() {
   const fetchWeather = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/weather?city=${city}`
+        `https://weather-app-d47o.onrender.com/api/weather?city=${city}`
       );
       const data = await response.json();
       setWeather(data);
